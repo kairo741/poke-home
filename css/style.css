@@ -1,0 +1,443 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/*@import url(https://db.onlinewebfonts.com/c/3f68028e370ca2ed456ca322cfeb2f5d?family=Seconda+XtraSoft+W00+Medium);*/
+/*@font-face {*/
+/*  font-family: "Seconda XtraSoft W00 Medium";*/
+/*  src: url("https://db.onlinewebfonts.com/t/3f68028e370ca2ed456ca322cfeb2f5d.eot");*/
+/*  src: url("https://db.onlinewebfonts.com/t/3f68028e370ca2ed456ca322cfeb2f5d.eot?#iefix") format("embedded-opentype"),*/
+/*  url("https://db.onlinewebfonts.com/t/3f68028e370ca2ed456ca322cfeb2f5d.woff2") format("woff2"),*/
+/*  url("https://db.onlinewebfonts.com/t/3f68028e370ca2ed456ca322cfeb2f5d.woff") format("woff"),*/
+/*  url("https://db.onlinewebfonts.com/t/3f68028e370ca2ed456ca322cfeb2f5d.ttf") format("truetype"),*/
+/*  url("https://db.onlinewebfonts.com/t/3f68028e370ca2ed456ca322cfeb2f5d.svg#Seconda XtraSoft W00 Medium") format("svg");*/
+/*}*/
+@font-face {
+  font-family: "UDKakugo C80 Pro";
+  src: url("UDKakugo C80 Pro.ttf");
+}
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  font-family: "UDKakugo C80 Pro", serif;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+.page-background {
+  /*background: linear-gradient(to bottom, rgba(218, 255, 163, 255), rgba(154, 237, 202, 255)); !important;*/
+  background: rgba(154, 237, 202, 255) !important;
+}
+
+.poke-box {
+  min-width: 550px;
+  max-width: 550px;
+  min-height: 480px;
+}
+
+.box-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(17, 167, 168, 255);
+  border-radius: 18px 18px 0 0;
+}
+
+.box-title-container {
+  font-size: 1.4rem;
+  color: rgba(113, 113, 115, 255);
+  margin-top: 9px;
+  margin-bottom: 7px;
+  border-radius: 80px;
+  text-align: center;
+  background: #fff;
+  width: 320px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.box-content {
+  background: #fff;
+  border: solid 6px rgba(39, 211, 208, 255);
+  border-radius: 0 0 18px 18px;
+  border-top: none;
+}
+
+.box-content-line {
+  display: flex;
+  justify-content: center;
+}
+
+.poke-container {
+  border-radius: 50%; /* Fundo redondo */
+  width: 100px; /* Largura do fundo */
+  height: 80px; /* Altura do fundo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible; /* Permitir que o conteúdo ultrapasse o fundo */
+  background: radial-gradient(circle, rgba(217, 255, 238, 255) 40%, rgba(173, 216, 230, 0) 70%);
+}
+
+#boxes-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas padrão */
+  justify-items: center;
+  gap: 10px; /* Espaçamento entre os itens */
+  transition: all 0.3s ease-in-out; /* Transição para o contêiner */
+}
+
+#boxes-container .poke-container {
+  transition: transform 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  #boxes-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas médias */
+  }
+}
+
+@media (max-width: 768px) {
+  #boxes-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 coluna para telas pequenas */
+  }
+}
+
+.poke-container {
+  position: relative; /* Necessário para o tooltip */
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  height: 40px;
+  width: 200px;
+  line-height: 40px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  transition: visibility 0s, opacity 0.5s ease;
+  opacity: 0;
+  margin-bottom: 10px;
+  /*border-bottom: 4px double rgba(55,195,76,255);*/
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #595856;
+  margin-bottom: 2px;
+  z-index: 1;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgba(55, 195, 76, 255);
+}
+
+.tooltip .green-line {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #595856;
+  margin-top: 2px;
+}
+
+.arrow {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  border: solid #595856;
+  border-radius: 4px;
+  background: rgba(55, 195, 76, 255);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 13px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  z-index: -1;
+  overflow: clip;
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+}
+
+.poke-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.pkm-img {
+  cursor: url("https://www.serebii.net/itemdex/sprites/pokeball.png"), auto;
+}
+
+.poke-container.checked::after {
+  cursor: grabbing;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  right: 0;
+  bottom: 0;
+  background-image: url('/img/checked.png');
+  background-size: 100px;
+  overflow: visible;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+
