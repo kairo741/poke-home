@@ -439,5 +439,20 @@ textarea {
   pointer-events: none;
 }
 
+.fill-box-icon {
+  height: 30px;
+  cursor: pointer;
+}
+
+.fill-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  padding: 4px;
+  margin: 20px;
+  width: 150px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
 
 
