@@ -14,8 +14,8 @@
   <meta property="og:image" content="img/example.png">
   <meta property="og:image:alt" content="Imagem de exemplo da Interface do Site">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="manifest" href="site.webmanifest">
@@ -24,9 +24,9 @@
 
 <body class="page-background">
 <br>
-<br>
-<br>
-<div style="display: flex;justify-content: center;">
+<!--<br>-->
+<!--<br>-->
+<!--<div style="display: flex;justify-content: center;">-->
 <!--  <div class="poke-box" id="31">-->
 <!--    <div class="box-header">-->
 <!--      <div class="box-title-container">#31 - #61</div>-->
@@ -182,30 +182,53 @@
 <!--                                                                                                             title="Arcanine"-->
 <!--                                                                                                             width="80"-->
 <!--                                                                                                             height="80"><span-->
-<!--        class="tooltip">Arcanine (#059)<span class="green-line"></span><span class="arrow"></span></span></span><span-->
-<!--        class="poke-container"><img id="pkm-60" class="pkm-img"-->
-<!--                                    src="https://www.serebii.net/pokemonhome/pokemon/80/060.png" alt="Poliwag"-->
-<!--                                    title="Poliwag" width="80" height="80"><span class="tooltip">Poliwag (#060)<span-->
-<!--        class="green-line"></span><span class="arrow"></span></span></span></div>-->
-<!--      <div class="fill-box-container">-->
-<!--        <img class="fill-box-icon" src="img/non-full-box.png">-->
-<!--        Preencher Box-->
+<!--        class="tooltip">Arcanine (#059)<span class="green-line"></span><span class="arrow"></span></span></span>-->
+<!--        <span-->
+<!--          class="poke-container"><img id="pkm-60" class="pkm-img"-->
+<!--                                      src="https://www.serebii.net/pokemonhome/pokemon/80/060.png" alt="Poliwag"-->
+<!--                                      title="Poliwag" width="80" height="80">-->
+<!--          <span class="tooltip">Poliwag (#060)<span-->
+<!--            class="green-line"></span><span class="arrow"></span>-->
+<!--          </span>-->
+<!--        </span></div>-->
+<!--      <div class="box-footer">-->
+<!--        <span class="check-count-2">22/30</span>-->
+<!--        <div class="fill-box-container">-->
+<!--          <img class="fill-box-icon" src="img/non-full-box.png">-->
+<!--          Preencher Box-->
+<!--        </div>-->
 <!--      </div>-->
 <!--    </div>-->
-
 <!--  </div>-->
-</div>
-<div style="margin: 200px">
-  <div class="poke-container">
-    <img src="https://www.serebii.net/pokemonhome/pokemon/80/006.png" loading="lazy" alt="Charizard" title="Charizard"
-         height="80" width="80">
-    <span class="tooltip" style="opacity: 1; visibility: visible">
-      Charizard (#006)
-      <span class="green-line"></span>
-      <span class="arrow"></span>
-    </span>
+<!--</div>-->
+<div class="stats-container">
+  <div class="stats">
+    <div class="header">
+      Pokémon HOME LFD Status
+    </div>
+    <div class="body">
+      <div class="content">
+        <span class="title">Número de Pokémon capturados</span>
+        <span id="caught-count" class="value">300/300</span>
+      </div>
+      <div class="content">
+        <span>Formas Shiny</span>
+        <span class="value">52</span>
+      </div>
+    </div>
   </div>
 </div>
+<!--<div style="margin: 200px">-->
+<!--  <div class="poke-container">-->
+<!--    <img src="https://www.serebii.net/pokemonhome/pokemon/80/006.png" loading="lazy" alt="Charizard" title="Charizard"-->
+<!--         height="80" width="80">-->
+<!--    <span class="tooltip" style="opacity: 1; visibility: visible">-->
+<!--      Charizard (#006)-->
+<!--      <span class="green-line"></span>-->
+<!--      <span class="arrow"></span>-->
+<!--    </span>-->
+<!--  </div>-->
+<!--</div>-->
 <div id="boxes-container"></div>
 <!--  <table style="min-width:500px;max-width:500px;min-height:480px;">-->
 <!--    <tbody>-->

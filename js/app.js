@@ -1,7 +1,8 @@
+document.cookie = "meuCookie=valor; SameSite=Lax; Secure";
+
 const maxPokemons = 1025;
 const maxPerBox = 30;
 const maxPerRow = 6;
-const gridContainer = document.getElementById('pokemon-grid');
 const boxesContainer = document.getElementById('boxes-container');
 
 async function loadPokeData() {
@@ -16,6 +17,7 @@ loadPokeData().then((json) => {
 
     const container = document.createElement('div');
     container.classList.add('box-content');
+    let checkedCount = 0;
     // Função para criar dinamicamente o conteúdo
     for (let i = k; i < k + maxPerBox; i += maxPerRow) {
       // Cria uma div para representar uma linha
@@ -40,6 +42,7 @@ loadPokeData().then((json) => {
 
         if (checkPokeOnStorage(json[j].number)) {
           pokeContainer.classList.add('checked');
+          checkedCount++;
         }
 
         // Adiciona o evento de clique para alternar a classe 'checked'
@@ -47,6 +50,12 @@ loadPokeData().then((json) => {
           const pokeNumber = json[j].number;
           savePokeOnStorage(pokeNumber);
           pokeContainer.classList.toggle('checked');
+          if (pokeContainer.classList.contains('checked')) {
+            checkedCount++;
+          } else {
+            checkedCount--;
+          }
+          updateCheckedCount(box, checkedCount)
         });
 
         const tooltip = createTooltip(json[j])
@@ -62,12 +71,14 @@ loadPokeData().then((json) => {
       container.appendChild(row);
 
     }
-    const fillButtonContainer = createFillButton(box);
+    const boxFooter = createBoxFooter(box, checkedCount);
 
-    container.appendChild(fillButtonContainer);
+    container.appendChild(boxFooter);
     pokeBox.appendChild(container);
     boxesContainer.appendChild(pokeBox);
   }
+
+  checkStats()
 })
 
 
@@ -98,8 +109,30 @@ function createTooltip(poke) {
   return tooltip;
 }
 
+function createBoxFooter(boxNumber, checkedCount) {
+  const boxFooter = document.createElement('div');
+  boxFooter.classList.add('box-footer');
+
+
+  const checkedNumberSpan = document.createElement('span');
+  checkedNumberSpan.id = `check-count-${ boxNumber }`;
+  checkedNumberSpan.innerText = `${ checkedCount } / ${ maxPerBox }`;
+
+  const fillButtonContainer = createFillButton(boxNumber);
+  boxFooter.appendChild(checkedNumberSpan);
+  boxFooter.appendChild(fillButtonContainer);
+
+  return boxFooter;
+}
+
+function updateCheckedCount(boxNumber, checkedCount) {
+  const checkedNumberSpan = document.getElementById(`check-count-${ boxNumber }`);
+  checkedNumberSpan.innerText = `${ checkedCount } / ${ maxPerBox }`;
+  updateStats()
+}
+
 function createFillButton(boxNumber) {
-  const fillButtonContainer = document.createElement('div'); // TODO - Transformar em func
+  const fillButtonContainer = document.createElement('div');
   fillButtonContainer.classList.add('fill-box-container');
   const fillButton = document.createElement('img');
   fillButton.id = `box-${ boxNumber }`
@@ -132,18 +165,23 @@ function createFillButton(boxNumber) {
 function toggleAllPokeInBox(boxNumber, check = true) {
   const endPkmNum = (maxPerBox * boxNumber);
   const startPkmNum = endPkmNum - maxPerBox;
-  for (let pkmNum = startPkmNum; pkmNum < endPkmNum; pkmNum++) {
+  let checkedCount = 0;
+  for (let pkmNum = startPkmNum; pkmNum < (endPkmNum > maxPokemons ? maxPokemons : endPkmNum); pkmNum++) {
     const poke = document.getElementById(`pkm-${ pkmNum + 1 }`)
+    checkedCount++;
     if (check) {
-      console.log(`pkm-${ pkmNum + 1 } - checked`)
       poke.classList.add('checked');
       localStorage.setItem((pkmNum + 1).toString().padStart(3, '0'), '0');
       continue;
     }
-    console.log(`pkm-${ pkmNum + 1 } - unchecked`)
     poke.classList.remove('checked');
     localStorage.setItem((pkmNum + 1).toString().padStart(3, '0'), '1');
   }
+  if (check) {
+    updateCheckedCount(boxNumber, checkedCount)
+    return;
+  }
+  updateCheckedCount(boxNumber, 0)
 }
 
 function isBoxFull(boxNumber) {
@@ -165,6 +203,26 @@ function savePokeOnStorage(pokeNumber) {
   } else {
     localStorage.setItem(pokeNumber, '0');
   }
+}
+
+function updateStats() {
+  const checkedNumberSpan = document.getElementById("caught-count");
+  const checkedDivsCount = countCheckedDivs()
+  localStorage.setItem("caught-count", `${ checkedDivsCount }`);
+  checkedNumberSpan.innerText = `${ checkedDivsCount } / ${ maxPokemons }`;
+}
+
+function countCheckedDivs() {
+  // Seleciona todas as divs com as classes 'poke-container' e 'checked'
+  const checkedPokeContainers = document.querySelectorAll('.poke-container.checked');
+  return checkedPokeContainers.length;
+}
+
+function checkStats() {
+  if (localStorage.getItem("caught-count") == null) {
+    localStorage.setItem("caught-count", `${ 0 }`);
+  }
+  updateStats()
 }
 
 function checkPokeOnStorage(pokeNumber) {
