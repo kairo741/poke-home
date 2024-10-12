@@ -307,12 +307,14 @@ textarea {
   background: radial-gradient(circle, rgba(217, 255, 238, 255) 40%, rgba(173, 216, 230, 0) 70%);
 }
 
-#boxes-container {
+#boxes-container { /*TODO - Fix grid overflow*/
+  width: 99.2%;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 colunas padrão */
   justify-items: center;
   gap: 10px; /* Espaçamento entre os itens */
-  transition: all 0.3s ease-in-out; /* Transição para o contêiner */
+  /*transition: all 0.3s ease-in-out; !* Transição para o contêiner *!*/
 }
 
 #boxes-container .poke-container {
