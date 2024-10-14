@@ -49,7 +49,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 2px solid black;
   margin: 1em 0;
   padding: 0;
 }
@@ -252,6 +252,12 @@ textarea {
   }
 }
 
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .page-background {
   /*background: linear-gradient(to bottom, rgba(218, 255, 163, 255), rgba(154, 237, 202, 255)); !important;*/
   background: rgba(154, 237, 202, 255) !important;
@@ -307,7 +313,7 @@ textarea {
   background: radial-gradient(circle, rgba(217, 255, 238, 255) 40%, rgba(173, 216, 230, 0) 70%);
 }
 
-#boxes-container { /*TODO - Fix grid overflow*/
+.boxes-container { /*TODO - Fix grid overflow*/
   width: 99.2%;
   margin: auto;
   display: grid;
@@ -317,7 +323,7 @@ textarea {
   /*transition: all 0.3s ease-in-out; !* Transição para o contêiner *!*/
 }
 
-#boxes-container .poke-container {
+.boxes-container .poke-container {
   transition: transform 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
@@ -326,6 +332,7 @@ textarea {
 }
 
 .tooltip {
+  text-wrap: nowrap;
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -497,13 +504,13 @@ textarea {
 
 
 @media (max-width: 1200px) {
-  #boxes-container {
+  .boxes-container {
     grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas médias */
   }
 }
 
 @media (max-width: 768px) {
-  #boxes-container {
+  .boxes-container {
     grid-template-columns: repeat(1, 1fr); /* 1 coluna para telas pequenas */
   }
 }

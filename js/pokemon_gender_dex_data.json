@@ -1,0 +1,620 @@
+[
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/003-f.png",
+    "name": "Venusaur (Female)",
+    "number": "003",
+    "form_number": "003-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/012-f.png",
+    "name": "Butterfree (Female)",
+    "number": "012",
+    "form_number": "012-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/019-f.png",
+    "name": "Rattata (Female)",
+    "number": "019",
+    "form_number": "019-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/020-f.png",
+    "name": "Raticate (Female)",
+    "number": "020",
+    "form_number": "020-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/025-f.png",
+    "name": "Pikachu (Female)",
+    "number": "025",
+    "form_number": "025-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/026-f.png",
+    "name": "Raichu (Female)",
+    "number": "026",
+    "form_number": "026-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/041-f.png",
+    "name": "Zubat (Female)",
+    "number": "041",
+    "form_number": "041-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/042-f.png",
+    "name": "Golbat (Female)",
+    "number": "042",
+    "form_number": "042-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/044-f.png",
+    "name": "Gloom (Female)",
+    "number": "044",
+    "form_number": "044-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/045-f.png",
+    "name": "Vileplume (Female)",
+    "number": "045",
+    "form_number": "045-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/064-f.png",
+    "name": "Kadabra (Female)",
+    "number": "064",
+    "form_number": "064-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/065-f.png",
+    "name": "Alakazam (Female)",
+    "number": "065",
+    "form_number": "065-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/084-f.png",
+    "name": "Doduo (Female)",
+    "number": "084",
+    "form_number": "084-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/085-f.png",
+    "name": "Dodrio (Female)",
+    "number": "085",
+    "form_number": "085-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/097-f.png",
+    "name": "Hypno (Female)",
+    "number": "097",
+    "form_number": "097-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/111-f.png",
+    "name": "Rhyhorn (Female)",
+    "number": "111",
+    "form_number": "111-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/112-f.png",
+    "name": "Rhydon (Female)",
+    "number": "112",
+    "form_number": "112-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/118-f.png",
+    "name": "Goldeen (Female)",
+    "number": "118",
+    "form_number": "118-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/119-f.png",
+    "name": "Seaking (Female)",
+    "number": "119",
+    "form_number": "119-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/123-f.png",
+    "name": "Scyther (Female)",
+    "number": "123",
+    "form_number": "123-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/129-f.png",
+    "name": "Magikarp (Female)",
+    "number": "129",
+    "form_number": "129-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/130-f.png",
+    "name": "Gyarados (Female)",
+    "number": "130",
+    "form_number": "130-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/133-f.png",
+    "name": "Eevee (Female)",
+    "number": "133",
+    "form_number": "133-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/154-f.png",
+    "name": "Meganium (Female)",
+    "number": "154",
+    "form_number": "154-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/165-f.png",
+    "name": "Ledyba (Female)",
+    "number": "165",
+    "form_number": "165-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/166-f.png",
+    "name": "Ledian (Female)",
+    "number": "166",
+    "form_number": "166-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/178-f.png",
+    "name": "Xatu (Female)",
+    "number": "178",
+    "form_number": "178-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/185-f.png",
+    "name": "Sudowoodo (Female)",
+    "number": "185",
+    "form_number": "185-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/186-f.png",
+    "name": "Politoed (Female)",
+    "number": "186",
+    "form_number": "186-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/190-f.png",
+    "name": "Aipom (Female)",
+    "number": "190",
+    "form_number": "190-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/194-f.png",
+    "name": "Wooper (Female)",
+    "number": "194",
+    "form_number": "194-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/195-f.png",
+    "name": "Quagsire (Female)",
+    "number": "195",
+    "form_number": "195-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/198-f.png",
+    "name": "Murkrow (Female)",
+    "number": "198",
+    "form_number": "198-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/202-f.png",
+    "name": "Wobbuffet (Female)",
+    "number": "202",
+    "form_number": "202-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/203-f.png",
+    "name": "Girafarig (Female)",
+    "number": "203",
+    "form_number": "203-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/207-f.png",
+    "name": "Gligar (Female)",
+    "number": "207",
+    "form_number": "207-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/208-f.png",
+    "name": "Steelix (Female)",
+    "number": "208",
+    "form_number": "208-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/212-f.png",
+    "name": "Scizor (Female)",
+    "number": "212",
+    "form_number": "212-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/214-f.png",
+    "name": "Heracross (Female)",
+    "number": "214",
+    "form_number": "214-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/215-f.png",
+    "name": "Sneasel (Female)",
+    "number": "215",
+    "form_number": "215-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/215-h-f.png",
+    "name": "Sneasel (Female)",
+    "number": "215",
+    "form_number": "215-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/217-f.png",
+    "name": "Ursaring (Female)",
+    "number": "217",
+    "form_number": "217-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/221-f.png",
+    "name": "Piloswine (Female)",
+    "number": "221",
+    "form_number": "221-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/224-f.png",
+    "name": "Octillery (Female)",
+    "number": "224",
+    "form_number": "224-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/229-f.png",
+    "name": "Houndoom (Female)",
+    "number": "229",
+    "form_number": "229-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/232-f.png",
+    "name": "Donphan (Female)",
+    "number": "232",
+    "form_number": "232-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/255-f.png",
+    "name": "Torchic (Female)",
+    "number": "255",
+    "form_number": "255-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/256-f.png",
+    "name": "Combusken (Female)",
+    "number": "256",
+    "form_number": "256-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/257-f.png",
+    "name": "Blaziken (Female)",
+    "number": "257",
+    "form_number": "257-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/267-f.png",
+    "name": "Beautifly (Female)",
+    "number": "267",
+    "form_number": "267-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/269-f.png",
+    "name": "Dustox (Female)",
+    "number": "269",
+    "form_number": "269-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/272-f.png",
+    "name": "Ludicolo (Female)",
+    "number": "272",
+    "form_number": "272-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/274-f.png",
+    "name": "Nuzleaf (Female)",
+    "number": "274",
+    "form_number": "274-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/275-f.png",
+    "name": "Shiftry (Female)",
+    "number": "275",
+    "form_number": "275-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/307-f.png",
+    "name": "Meditite (Female)",
+    "number": "307",
+    "form_number": "307-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/308-f.png",
+    "name": "Medicham (Female)",
+    "number": "308",
+    "form_number": "308-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/315-f.png",
+    "name": "Roselia (Female)",
+    "number": "315",
+    "form_number": "315-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/316-f.png",
+    "name": "Gulpin (Female)",
+    "number": "316",
+    "form_number": "316-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/317-f.png",
+    "name": "Swalot (Female)",
+    "number": "317",
+    "form_number": "317-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/322-f.png",
+    "name": "Numel (Female)",
+    "number": "322",
+    "form_number": "322-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/323-f.png",
+    "name": "Camerupt (Female)",
+    "number": "323",
+    "form_number": "323-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/332-f.png",
+    "name": "Cacturne (Female)",
+    "number": "332",
+    "form_number": "332-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/350-f.png",
+    "name": "Milotic (Female)",
+    "number": "350",
+    "form_number": "350-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/369-f.png",
+    "name": "Relicanth (Female)",
+    "number": "369",
+    "form_number": "369-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/396-f.png",
+    "name": "Starly (Female)",
+    "number": "396",
+    "form_number": "396-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/397-f.png",
+    "name": "Staravia (Female)",
+    "number": "397",
+    "form_number": "397-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/398-f.png",
+    "name": "Staraptor (Female)",
+    "number": "398",
+    "form_number": "398-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/399-f.png",
+    "name": "Bidoof (Female)",
+    "number": "399",
+    "form_number": "399-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/400-f.png",
+    "name": "Bibarel (Female)",
+    "number": "400",
+    "form_number": "400-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/401-f.png",
+    "name": "Kricketot (Female)",
+    "number": "401",
+    "form_number": "401-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/402-f.png",
+    "name": "Kricketune (Female)",
+    "number": "402",
+    "form_number": "402-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/403-f.png",
+    "name": "Shinx (Female)",
+    "number": "403",
+    "form_number": "403-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/404-f.png",
+    "name": "Luxio (Female)",
+    "number": "404",
+    "form_number": "404-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/405-f.png",
+    "name": "Luxray (Female)",
+    "number": "405",
+    "form_number": "405-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/407-f.png",
+    "name": "Roserade (Female)",
+    "number": "407",
+    "form_number": "407-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/415-f.png",
+    "name": "Combee (Female)",
+    "number": "415",
+    "form_number": "415-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/417-f.png",
+    "name": "Pachirisu (Female)",
+    "number": "417",
+    "form_number": "417-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/418-f.png",
+    "name": "Buizel (Female)",
+    "number": "418",
+    "form_number": "418-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/419-f.png",
+    "name": "Floatzel (Female)",
+    "number": "419",
+    "form_number": "419-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/424-f.png",
+    "name": "Ambipom (Female)",
+    "number": "424",
+    "form_number": "424-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/443-f.png",
+    "name": "Gible (Female)",
+    "number": "443",
+    "form_number": "443-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/444-f.png",
+    "name": "Gabite (Female)",
+    "number": "444",
+    "form_number": "444-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/445-f.png",
+    "name": "Garchomp (Female)",
+    "number": "445",
+    "form_number": "445-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/449-f.png",
+    "name": "Hippopotas (Female)",
+    "number": "449",
+    "form_number": "449-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/450-f.png",
+    "name": "Hippowdon (Female)",
+    "number": "450",
+    "form_number": "450-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/453-f.png",
+    "name": "Croagunk (Female)",
+    "number": "453",
+    "form_number": "453-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/454-f.png",
+    "name": "Toxicroak (Female)",
+    "number": "454",
+    "form_number": "454-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/456-f.png",
+    "name": "Finneon (Female)",
+    "number": "456",
+    "form_number": "456-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/457-f.png",
+    "name": "Lumineon (Female)",
+    "number": "457",
+    "form_number": "457-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/459-f.png",
+    "name": "Snover (Female)",
+    "number": "459",
+    "form_number": "459-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/460-f.png",
+    "name": "Abomasnow (Female)",
+    "number": "460",
+    "form_number": "460-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/461-f.png",
+    "name": "Weavile (Female)",
+    "number": "461",
+    "form_number": "461-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/464-f.png",
+    "name": "Rhyperior (Female)",
+    "number": "464",
+    "form_number": "464-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/465-f.png",
+    "name": "Tangrowth (Female)",
+    "number": "465",
+    "form_number": "465-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/473-f.png",
+    "name": "Mamoswine (Female)",
+    "number": "473",
+    "form_number": "473-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/521-f.png",
+    "name": "Unfezant (Female)",
+    "number": "521",
+    "form_number": "521-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/592-f.png",
+    "name": "Frillish (Female)",
+    "number": "592",
+    "form_number": "592-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/593-f.png",
+    "name": "Jellicent (Female)",
+    "number": "593",
+    "form_number": "593-female"
+  },
+  {
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/668-f.png",
+    "name": "Pyroar (Female)",
+    "number": "668",
+    "form_number": "668-female"
+  },
+  {
+    "name": "Meowstic (Female)",
+    "number": "678-f",
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/678-f.png",
+    "form_number": "678-female"
+  },
+  {
+    "name": "Indeedee (Female)",
+    "number": "876-f",
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/876-f.png",
+    "form_number": "876-female"
+  },
+  {
+    "name": "Basculegion (Female)",
+    "number": "902-f",
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/902-f.png",
+    "form_number": "902-female"
+  },
+  {
+    "name": "Oinkologne (Female)",
+    "number": "916-f",
+    "img": "https://www.serebii.net/pokemonhome/pokemon/80/916-f.png",
+    "form_number": "916-female"
+  }
+]

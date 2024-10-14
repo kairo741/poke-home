@@ -1,0 +1,206 @@
+[
+  {
+    "img": "https://www.serebii.net/pokemon/art/003-gi.png",
+    "name": "G-Max Venusaur",
+    "number": "003",
+    "form_number": "003-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/006-g.png",
+    "name": "G-Max Charizard",
+    "number": "006",
+    "form_number": "006-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/009-gi.png",
+    "name": "G-Max Blastoise",
+    "number": "009",
+    "form_number": "009-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/012-gi.png",
+    "name": "G-Max Butterfree",
+    "number": "012",
+    "form_number": "012-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/025-gi.png",
+    "name": "G-Max Pikachu",
+    "number": "025",
+    "form_number": "025-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/052-gi.png",
+    "name": "G-Max Meowth",
+    "number": "052",
+    "form_number": "052-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/068-gi.png",
+    "name": "G-Max Machamp",
+    "number": "068",
+    "form_number": "068-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/094-gi.png",
+    "name": "G-Max Gengar",
+    "number": "094",
+    "form_number": "094-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/099-gi.png",
+    "name": "G-Max Kingler",
+    "number": "099",
+    "form_number": "099-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/131-gi.png",
+    "name": "G-Max Lapras",
+    "number": "131",
+    "form_number": "131-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/133-gi.png",
+    "name": "G-Max Eevee",
+    "number": "133",
+    "form_number": "133-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/143-gi.png",
+    "name": "G-Max Snorlax",
+    "number": "143",
+    "form_number": "143-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/569-gi.png",
+    "name": "G-Max Garbodor",
+    "number": "569",
+    "form_number": "569-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/809-gi.png",
+    "name": "G-Max Melmetal",
+    "number": "809",
+    "form_number": "809-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/812-gi.png",
+    "name": "G-Max Rillaboom",
+    "number": "812",
+    "form_number": "812-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/815-gi.png",
+    "name": "G-Max Cinderace",
+    "number": "815",
+    "form_number": "815-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/818-gi.png",
+    "name": "G-Max Inteleon",
+    "number": "818",
+    "form_number": "818-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/823-gi.png",
+    "name": "G-Max Corviknight",
+    "number": "823",
+    "form_number": "823-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/826-gi.png",
+    "name": "G-Max Orbeetle",
+    "number": "826",
+    "form_number": "826-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/834-gi.png",
+    "name": "G-Max Drednaw",
+    "number": "834",
+    "form_number": "834-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/839-gi.png",
+    "name": "G-Max Coalossal",
+    "number": "839",
+    "form_number": "839-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/841-gi.png",
+    "name": "G-Max Flapple",
+    "number": "841",
+    "form_number": "841-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/842-gi.png",
+    "name": "G-Max Appletun",
+    "number": "842",
+    "form_number": "842-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/844-gi.png",
+    "name": "G-Max Sandaconda",
+    "number": "844",
+    "form_number": "844-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/849-gi.png",
+    "name": "G-Max Toxtricity Amped Form",
+    "number": "849",
+    "form_number": "849-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/849-gi.png",
+    "name": "G-Max Toxtricity Low Key Form",
+    "number": "849",
+    "form_number": "849-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/851-gi.png",
+    "name": "G-Max Centiskorch",
+    "number": "851",
+    "form_number": "851-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/858-gi.png",
+    "name": "G-Max Hatterene",
+    "number": "858",
+    "form_number": "858-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/861-gi.png",
+    "name": "G-Max Grimmsnarl",
+    "number": "861",
+    "form_number": "861-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/869-gi.png",
+    "name": "G-Max Alcremie",
+    "number": "869",
+    "form_number": "869-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/879-gi.png",
+    "name": "G-Max Copperajah",
+    "number": "879",
+    "form_number": "879-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/884-gi.png",
+    "name": "G-Max Duraludon",
+    "number": "884",
+    "form_number": "884-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/892-gi.png",
+    "name": "G-Max Urshifu",
+    "number": "892",
+    "form_number": "892-g-max"
+  },
+  {
+    "img": "https://www.serebii.net/pokemon/art/892-rgi.png",
+    "name": "G-Max Urshifu",
+    "number": "892",
+    "form_number": "892-g-max"
+  }
+]
