@@ -15,10 +15,10 @@ let genderDexData;
 let gMaxDexData;
 
 async function loadPokeData() {
-  const responseComplete = await fetch("js/pokemon_normal_dex_data.json");
-  const responseFormVariance = await fetch("js/pokemon_form_dex_data.json");
-  const responseGenderVariance = await fetch("js/pokemon_gender_dex_data.json");
-  const responseGMax = await fetch("js/pokemon_g_max_dex_data.json");
+  const responseComplete = await fetch("./js/pokemon_normal_dex_data.json");
+  const responseFormVariance = await fetch("./js/pokemon_form_dex_data.json");
+  const responseGenderVariance = await fetch("./js/pokemon_gender_dex_data.json");
+  const responseGMax = await fetch("./js/pokemon_g_max_dex_data.json");
   normalDexData = await responseComplete.json();
   formDexData = await responseFormVariance.json();
   genderDexData = await responseGenderVariance.json();
@@ -27,6 +27,7 @@ async function loadPokeData() {
 
 async function init() {
   shinyVersions = (/true/).test(localStorage.getItem('shiny-dex'));
+  document.getElementById("dex-type-sw").checked = shinyVersions;
   loadPokeData().then((json) => {
     // fillBoxes(normalDexData);
     // const modifiedData = genderDexData.map(pokemon => {
@@ -270,7 +271,8 @@ function checkPokeOnStorage(pokeNumber) {
   return localStorage.getItem(pokeNumber) != null && localStorage.getItem(pokeNumber) === "0";
 }
 
-function toggleShinyDex() { // TODO - Rever método de verificação de shiny, talvez salvar a URL no json
+async function toggleShinyDex() { // TODO - Rever método de verificação de shiny, talvez salvar a URL no json
+  await new Promise(resolve => setTimeout(resolve, 500));
   shinyVersions = !shinyVersions;
   localStorage.setItem('shiny-dex', shinyVersions);
   window.location.reload();
