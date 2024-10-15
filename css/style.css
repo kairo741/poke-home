@@ -267,6 +267,13 @@ textarea {
   min-width: 550px;
   max-width: 550px;
   min-height: 480px;
+
+  /*&:hover {
+    .box-title-container {
+      background: rgba(247, 172, 31, 255);
+      color: white;
+    }
+  }*/
 }
 
 .box-header {
@@ -288,6 +295,11 @@ textarea {
   width: 320px;
   height: 40px;
   line-height: 40px;
+
+  &:hover {
+    background: rgba(247, 172, 31, 255);
+    color: white;
+  }
 }
 
 .box-content {
