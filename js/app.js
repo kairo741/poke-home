@@ -78,35 +78,40 @@ function fillBoxes(json) {
         // Cria a tag <img> com a imagem e dados do Pokémon
         const img = document.createElement('img');
         img.classList.add('pkm-img');
-        img.src = shinyVersions ? json[j].img.replace("pokemonhome/pokemon", "Shiny/home") : json[j].img;
-        img.alt = json[j].name;
-        img.title = json[j].name;
-        img.width = 80;
-        img.height = 80;
-        const pokeNumber = json[j].number;
-        if (checkPokeOnStorage(pokeNumber)) {
-          pokeContainer.classList.add('checked');
-          checkedCount++;
-        }
-
-        // Adiciona o evento de clique para alternar a classe 'checked'
-        img.addEventListener('click', () => {
-          savePokeOnStorage(pokeNumber);
-          pokeContainer.classList.toggle('checked');
-          if (pokeContainer.classList.contains('checked')) {
+        if (j >= maxPokemons) {
+          img.alt = "blank space";
+          img.title = "blank space";
+        } else {
+          img.src = shinyVersions ? json[j].img.replace("pokemonhome/pokemon", "Shiny/home") : json[j].img;
+          img.alt = json[j].name;
+          img.title = json[j].name;
+          const pokeNumber = json[j].number;
+          if (checkPokeOnStorage(pokeNumber)) {
+            pokeContainer.classList.add('checked');
             checkedCount++;
-          } else {
-            checkedCount--;
           }
-          updateCheckedCount(box, checkedCount)
-        });
 
-        const tooltip = createTooltip(json[j])
+          // Adiciona o evento de clique para alternar a classe 'checked'
+          img.addEventListener('click', () => {
+            savePokeOnStorage(pokeNumber);
+            pokeContainer.classList.toggle('checked');
+            if (pokeContainer.classList.contains('checked')) {
+              checkedCount++;
+            } else {
+              checkedCount--;
+            }
+            updateCheckedCount(box, k + 1)
+          });
 
-        if (j < maxPokemons) {
+          const tooltip = createTooltip(json[j])
+
+          // if (j < maxPokemons) {
           pokeContainer.appendChild(img);
           pokeContainer.appendChild(tooltip);
+          // }
         }
+        img.width = 80;
+        img.height = 80;
         // Adiciona o pokeContainer à linha
         row.appendChild(pokeContainer);
       }
@@ -114,7 +119,7 @@ function fillBoxes(json) {
       container.appendChild(row);
 
     }
-    const boxFooter = createBoxFooter(box, checkedCount);
+    const boxFooter = createBoxFooter(box, checkedCount, k + 1);
 
     container.appendChild(boxFooter);
     pokeBox.appendChild(container);
@@ -151,7 +156,7 @@ function createTooltip(poke) {
   return tooltip;
 }
 
-function createBoxFooter(boxNumber, checkedCount) {
+function createBoxFooter(boxNumber, checkedCount, boxId) {
   const boxFooter = document.createElement('div');
   boxFooter.classList.add('box-footer');
 
@@ -160,40 +165,43 @@ function createBoxFooter(boxNumber, checkedCount) {
   checkedNumberSpan.id = `check-count-${ boxNumber }`;
   checkedNumberSpan.innerText = `${ checkedCount } / ${ maxPerBox }`;
 
-  const fillButtonContainer = createFillButton(boxNumber);
+  const fillButtonContainer = createFillButton(boxNumber, boxId);
   boxFooter.appendChild(checkedNumberSpan);
   boxFooter.appendChild(fillButtonContainer);
 
   return boxFooter;
 }
 
-function updateCheckedCount(boxNumber, checkedCount) {
+function updateCheckedCount(boxNumber, boxId) {
   const checkedNumberSpan = document.getElementById(`check-count-${ boxNumber }`);
+  const box = document.getElementById(boxId);
+  const checkedPokeContainers = box.querySelectorAll('.poke-container.checked');
+  const checkedCount = checkedPokeContainers.length;
   checkedNumberSpan.innerText = `${ checkedCount } / ${ maxPerBox }`;
   updateStats()
 }
 
-function createFillButton(boxNumber) {
+function createFillButton(boxNumber, boxId) {
   const fillButtonContainer = document.createElement('div');
   fillButtonContainer.classList.add('fill-box-container');
   const fillButton = document.createElement('img');
   fillButton.id = `box-${ boxNumber }`
   fillButton.classList.add('fill-box-icon');
   if (isBoxFull(boxNumber)) {
-    fillButton.src = "img/non-full-box.png";
+    fillButton.src = "img/full-box.png";
     fillButtonContainer.classList.add('checked');
   } else {
-    fillButton.src = "img/full-box.png";
+    fillButton.src = "img/non-full-box.png";
   }
   fillButton.addEventListener('click', () => {
     if (fillButtonContainer.classList.contains('checked')) {
       fillButtonContainer.classList.remove('checked');
       fillButtonContainer.children[0].src = "img/full-box.png";
-      toggleAllPokeInBox(boxNumber)
+      toggleAllPokeInBox(boxNumber, boxId)
       return;
     }
     fillButtonContainer.classList.add('checked');
-    toggleAllPokeInBox(boxNumber, false)
+    toggleAllPokeInBox(boxNumber, boxId, false)
     fillButtonContainer.children[0].src = "img/non-full-box.png";
   });
 
@@ -204,7 +212,7 @@ function createFillButton(boxNumber) {
   return fillButtonContainer;
 }
 
-function toggleAllPokeInBox(boxNumber, check = true) {
+function toggleAllPokeInBox(boxNumber, boxId, check = true) {
   const endPkmNum = (maxPerBox * boxNumber);
   const startPkmNum = endPkmNum - maxPerBox;
   let checkedCount = 0;
@@ -219,11 +227,7 @@ function toggleAllPokeInBox(boxNumber, check = true) {
     poke.classList.remove('checked');
     localStorage.setItem((pkmNum + 1).toString().padStart(3, '0'), '1');
   }
-  if (check) {
-    updateCheckedCount(boxNumber, checkedCount)
-    return;
-  }
-  updateCheckedCount(boxNumber, 0)
+  updateCheckedCount(boxNumber, boxId)
 }
 
 function isBoxFull(boxNumber) {
@@ -231,7 +235,7 @@ function isBoxFull(boxNumber) {
   const startPkmNum = endPkmNum - maxPerBox;
   let isFilled = true;
   for (let pkmNum = startPkmNum; pkmNum < endPkmNum; pkmNum++) {
-    if (checkPokeOnStorage((pkmNum + 1).toString().padStart(3, '0'))) {
+    if (!checkPokeOnStorage((pkmNum + 1).toString().padStart(3, '0'))) {
       isFilled = false;
       break;
     }
