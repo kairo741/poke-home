@@ -100,7 +100,7 @@ function fillBoxes(json) {
             } else {
               checkedCount--;
             }
-            updateCheckedCount(box, k + 1)
+            updateCheckedCount( k + 1)
           });
 
           const tooltip = createTooltip(json[j])
@@ -162,7 +162,7 @@ function createBoxFooter(boxNumber, checkedCount, boxId) {
 
 
   const checkedNumberSpan = document.createElement('span');
-  checkedNumberSpan.id = `check-count-${ boxNumber }`;
+  checkedNumberSpan.id = `check-count-${ boxId }`;
   checkedNumberSpan.innerText = `${ checkedCount } / ${ maxPerBox }`;
 
   const fillButtonContainer = createFillButton(boxNumber, boxId);
@@ -172,8 +172,8 @@ function createBoxFooter(boxNumber, checkedCount, boxId) {
   return boxFooter;
 }
 
-function updateCheckedCount(boxNumber, boxId) {
-  const checkedNumberSpan = document.getElementById(`check-count-${ boxNumber }`);
+function updateCheckedCount(boxId) {
+  const checkedNumberSpan = document.getElementById(`check-count-${ boxId }`);
   const box = document.getElementById(boxId);
   const checkedPokeContainers = box.querySelectorAll('.poke-container.checked');
   const checkedCount = checkedPokeContainers.length;
@@ -227,7 +227,7 @@ function toggleAllPokeInBox(boxNumber, boxId, check = true) {
     poke.classList.remove('checked');
     localStorage.setItem((pkmNum + 1).toString().padStart(3, '0'), '1');
   }
-  updateCheckedCount(boxNumber, boxId)
+  updateCheckedCount(boxId)
 }
 
 function isBoxFull(boxNumber) {
@@ -329,7 +329,7 @@ function fillFormBoxes(jsonData, boxId, boxTitle) {
             } else {
               checkedCount--;
             }
-            updateCheckedCount(box, checkedCount)
+            updateCheckedCount(pokeBox.id)
           });
 
           const tooltip = createTooltip(jsonData[j])
@@ -343,7 +343,6 @@ function fillFormBoxes(jsonData, boxId, boxTitle) {
         img.width = 80;
         img.height = 80;
 
-
         // Adiciona o pokeContainer à linha
         row.appendChild(pokeContainer);
       }
@@ -351,7 +350,7 @@ function fillFormBoxes(jsonData, boxId, boxTitle) {
       container.appendChild(row);
 
     }
-    const boxFooter = createBoxFooter(box, checkedCount);
+    const boxFooter = createBoxFooter(box, checkedCount, pokeBox.id);
 
     container.appendChild(boxFooter);
     pokeBox.appendChild(container);
