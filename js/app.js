@@ -100,7 +100,7 @@ function fillBoxes(json) {
             } else {
               checkedCount--;
             }
-            updateCheckedCount( k + 1)
+            updateCheckedCount(k + 1)
           });
 
           const tooltip = createTooltip(json[j])
@@ -359,4 +359,10 @@ function fillFormBoxes(jsonData, boxId, boxTitle) {
   }
 
   checkStats()
+}
+
+async function clearAll() {
+  localStorage.clear();
+  await new Promise(resolve => setTimeout(resolve, 400));
+  window.location.reload();
 }

@@ -15,7 +15,7 @@
   transition: transform 0.5s;
   background-color: var(--background);
   color: white;
-  border: none;
+  border: solid 1px white;
   border-radius: 50%;
   width: var(--fab);
   height: var(--fab);
@@ -34,7 +34,7 @@
   transition: all 0.5s;
   background-color: var(--background);
   color: white;
-  border: none;
+  border: solid 1px white;
   border-radius: 50%;
   width: var(--minifab);
   height: var(--minifab);
@@ -48,6 +48,10 @@
   visibility: visible;
   opacity: 1;
   transform: scale(1);
+}
+
+.submenu-fab:hover, .menu-fab:hover {
+  transform: scale(1.1);
 }
 
 .fab-icon {
@@ -65,12 +69,17 @@
   bottom: calc(var(--fabmargin) + var(--fab) + var(--menugap) + var(--minifab) + var(--menugap));
 }
 
+.three {
+  right: calc(var(--fabmargin) + (var(--fab) - var(--minifab)) / 2);
+  bottom: calc(var(--fabmargin) + var(--fab) + var(--menugap) + var(--minifab) + var(--menugap) + var(--minifab) + var(--menugap));
+}
+
 .tooltip-submenu {
   position: absolute; /* Posiciona o tooltip em relação ao botão pai */
   text-wrap: nowrap;
   bottom: 6px;
-  left: 100%;
-  transform: translateX(-150%);
+  right: 125%;
+  /*transform: translateX(-150%);*/
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s;
@@ -83,14 +92,17 @@
 }
 
 .tooltip-menu {
+  right: initial;
   bottom: -28px;
   left: 122%;
+  transform: translateX(-150%);
 }
 
 /* Mostrar tooltip ao passar o mouse sobre o botão */
 .menu-fab:hover .menu-tooltip,
 .submenu-fab:hover .one-tooltip,
-.submenu-fab:hover .two-tooltip {
+.submenu-fab:hover .two-tooltip,
+.submenu-fab:hover .three-tooltip {
   visibility: visible;
   opacity: 1;
 }

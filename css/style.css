@@ -528,3 +528,8 @@ textarea {
   }
 }
 
+@media (max-width: 1130px) {
+  .boxes-container {
+    overflow: auto !important;
+  }
+}
