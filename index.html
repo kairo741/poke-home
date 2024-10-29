@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/external.css">
   <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/floating-submenu.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="Form Living Dex Organizer Guide">
@@ -205,9 +206,26 @@
 <!--    </div>-->
 <!--  </div>-->
 <!--</div>-->
+<div id="floating-menu-button">
+  <button id="menu-button" class="menu-fab" onclick="toggleMenu()">
+    <img src="img/white-pokeball.png" alt="Menu" class="fab-icon menu-tooltip">
+    <span class="tooltip-submenu tooltip-menu menu-tooltip">Menu</span>
+  </button>
+
+  <button id="minifab1" class="submenu-fab one" onclick="openExportModal()">
+    <img src="img/white-pokeball.png" alt="Menu" class="fab-icon menu-tooltip">
+    <span class="tooltip-submenu one-tooltip">Exportar Dados</span>
+  </button>
+
+  <button id="minifab2" class="submenu-fab two" onclick="openImportModal()">
+    <img src="img/white-pokeball.png" alt="Menu" class="fab-icon menu-tooltip">
+    <span class="tooltip-submenu two-tooltip">Importar Dados</span>
+  </button>
+</div>
+
 <!-- Botões para abrir o modal -->
-<button onclick="openExportModal()">Exportar Dados</button>
-<button onclick="openImportModal()">Importar Dados</button>
+<!--<button onclick="openExportModal()">Exportar Dados</button>-->
+<!--<button onclick="openImportModal()">Importar Dados</button>-->
 
 <!-- Modal para exportação -->
 <div id="exportModal" class="modal" style="display:none;">
@@ -293,6 +311,7 @@
 <div id="g-max-boxes-container" class="boxes-container"></div>
 <script src="js/app.js"></script>
 <script src="js/modal-controller.js"></script>
+<script src="js/menus.js"></script>
 </body>
 
 </html>

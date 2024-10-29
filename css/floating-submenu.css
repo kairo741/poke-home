@@ -1,0 +1,106 @@
+/* Dimensões e espaçamentos */
+:root {
+  --minifab: 40px;
+  --fab: 56px;
+  --menugap: 16px;
+  --fabmargin: 48px;
+  --background: rgba(17, 167, 168, 255);
+}
+
+.menu-fab {
+  z-index: 2;
+  position: fixed;
+  right: var(--fabmargin);
+  bottom: var(--fabmargin);
+  transition: transform 0.5s;
+  background-color: var(--background);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: var(--fab);
+  height: var(--fab);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.submenu-fab {
+  z-index: 2;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 0.5s;
+  background-color: var(--background);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: var(--minifab);
+  height: var(--minifab);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.submenu-fab.active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fab-icon {
+  width: 80%;
+  height: auto;
+}
+
+.one {
+  right: calc(var(--fabmargin) + (var(--fab) - var(--minifab)) / 2);
+  bottom: calc(var(--fabmargin) + var(--fab) + var(--menugap));
+}
+
+.two {
+  right: calc(var(--fabmargin) + (var(--fab) - var(--minifab)) / 2);
+  bottom: calc(var(--fabmargin) + var(--fab) + var(--menugap) + var(--minifab) + var(--menugap));
+}
+
+.tooltip-submenu {
+  position: absolute; /* Posiciona o tooltip em relação ao botão pai */
+  text-wrap: nowrap;
+  bottom: 6px;
+  left: 100%;
+  transform: translateX(-150%);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 0, 0, 0.7); /* Cor do fundo do tooltip */
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.tooltip-menu {
+  bottom: -28px;
+  left: 122%;
+}
+
+/* Mostrar tooltip ao passar o mouse sobre o botão */
+.menu-fab:hover .menu-tooltip,
+.submenu-fab:hover .one-tooltip,
+.submenu-fab:hover .two-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.submenu-fab::after {
+  content: '';
+  position: absolute;
+  top: -10px; /* Aumenta a área clicável para cima */
+  right: -10px; /* Aumenta a área clicável para a direita */
+  bottom: -10px; /* Aumenta a área clicável para baixo */
+  left: -10px; /* Aumenta a área clicável para a esquerda */
+  z-index: -1; /* Coloca o pseudo-elemento atrás do botão */
+}
