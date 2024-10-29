@@ -516,13 +516,13 @@ textarea {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1690px) {
   .boxes-container {
     grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas médias */
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1130px) {
   .boxes-container {
     grid-template-columns: repeat(1, 1fr); /* 1 coluna para telas pequenas */
   }
