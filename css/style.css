@@ -285,6 +285,7 @@ textarea {
 }
 
 .box-title-container {
+  cursor: grabbing;
   font-size: 1.4rem;
   color: rgba(113, 113, 115, 255);
   margin-top: 9px;
@@ -424,7 +425,7 @@ textarea {
   cursor: url("https://www.serebii.net/itemdex/sprites/pokeball.png"), auto;
 }
 
-.poke-container.checked::after {
+.poke-container::after {
   cursor: grabbing;
   content: '';
   position: absolute;
@@ -434,11 +435,18 @@ textarea {
   bottom: 0;
   background-image: url('../img/checked.png');
   background-size: 100px;
-  overflow: visible;
   background-repeat: no-repeat;
-  opacity: 0.8;
+  opacity: 0;
+  transform: scale(4); /* Começa escondido */
+  transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 1;
   pointer-events: none;
+}
+
+.poke-container.checked::after {
+  opacity: 0.8;
+  transform: scale(1); /* Expande para o tamanho final */
+  cursor: grabbing;
 }
 
 .fill-box-icon {
